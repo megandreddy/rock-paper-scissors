@@ -22,6 +22,12 @@ print("Rock, Paper, Scissors, Shoot!")
 
 x = input("please choose one of 'rock', 'paper', 'scissors'; ")
 print(x)
+
+x = x.lower()
+print(x)
+
+
+
 # VALIDATE USER INPUT
 
 
@@ -64,6 +70,37 @@ print("COMPUTER CHOSE:", c)
 
 
 # DETERMINE THE WINNER
+
+#print("YOU WON")
+
+#print("COMPUTER WON")
+
+winners = {
+    "rock": {
+        "rock": None,
+        "paper": "paper",
+        "scissors": "rock",
+    },
+    "paper": {
+        "rock": "paper",
+        "paper": None,
+        "scissors": "scissors",
+    },
+    "scissors": {
+        "rock": "rock",
+        "paper": "scissors",
+        "scissors": None,
+    }
+}
+
+winner = winners[x][c]
+if winner == x:
+    print("YOU WON!")
+elif winner == c:
+    print("YOU LOST")
+else:
+    print("TIE")
+
 
 
 
