@@ -8,12 +8,18 @@ load_dotenv() #> loads contents of the .env file into the script's environment
 
 z = os.getenv("USER_NAME")
 
+
+print(z)
+
+
+#exit()
+
 print("Rock, Paper, Scissors, Shoot!")
 
 
 
 
-#exit()
+
 
 #
 # ASK FOR A USER INPUT
@@ -71,9 +77,9 @@ print("COMPUTER CHOSE:", c)
 
 # DETERMINE THE WINNER
 
-#print("YOU WON")
+#print("YOU WON!)
 
-#print("COMPUTER WON")
+#print("COMPUTER WON!")
 
 winners = {
     "rock": {
@@ -95,11 +101,11 @@ winners = {
 
 winner = winners[x][c]
 if winner == x:
-    print("YOU WON!")
+    print("YOU WON! WOOHOO!")
 elif winner == c:
-    print("YOU LOST")
+    print("YOU LOST. NO WORRIES, PLAY AGAIN!")
 else:
-    print("TIE")
+    print("TIE. PLAY AGAIN!")
 
 
 
